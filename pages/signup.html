@@ -269,12 +269,12 @@
                 <p>Comece agora mesmo a preparar o futuro</p>
             </div>
 
-            <form>
+            <form id="formCadastro">
                 <div class="input-group">
                     <label for="username">Nome</label>
                     <div class="input-wrapper">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="username" placeholder="André Eidi Maeda">
+                        <input type="text" id="username" placeholder="André Eidi Maeda" required>
                     </div>
                 </div>
 
@@ -282,7 +282,7 @@
                     <label for="email">E-mail</label>
                     <div class="input-wrapper">
                         <i class="far fa-envelope"></i>
-                        <input type="email" id="email" placeholder="seu@email.com">
+                        <input type="email" id="email" placeholder="seu@email.com" required>
                     </div>
                 </div>
 
@@ -290,11 +290,15 @@
                     <label for="password">Senha</label>
                     <div class="input-wrapper">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="password" placeholder="........">
+                        <input type="password" id="password" placeholder="........" required>
                     </div>
                 </div>
+
                 <button type="submit" class="btn btn-primary btn-full">Cadastrar-se</button>
+
+                <p id="msg" style="text-align:center; margin-top: 10px;"></p>
             </form>
+
 
             <div class="divider">ou</div>
 
@@ -328,6 +332,7 @@
         </div>
 
     </div>
+    <script src="../js/signup_script.js"></script>
 
 </body>
 </html>

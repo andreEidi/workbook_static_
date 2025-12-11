@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
         /* --- CSS ESPECÍFICO DA PÁGINA DE LOGIN --- */
         
@@ -269,12 +268,12 @@
                 <p>Entre para acessar seus planos de aula e workbooks</p>
             </div>
 
-            <form>
+            <form id="formLogin">
                 <div class="input-group">
                     <label for="email">E-mail</label>
                     <div class="input-wrapper">
                         <i class="far fa-envelope"></i>
-                        <input type="email" id="email" placeholder="seu@email.com">
+                        <input type="email" id="email" placeholder="seu@email.com" required>
                     </div>
                 </div>
 
@@ -282,16 +281,19 @@
                     <label for="password">Senha</label>
                     <div class="input-wrapper">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="password" placeholder="........">
+                        <input type="password" id="password" placeholder="........" required>
                     </div>
                 </div>
 
                 <a href="#" class="forgot-pass">Esqueceu a senha?</a>
 
-                <button type="button" class="btn btn-primary btn-full" onclick="window.location.href='main_page.html'">
+                <button type="submit" class="btn btn-primary btn-full">
                     Entrar
                 </button>
+
+                <p id="msg" style="text-align:center; margin-top: 10px;"></p>
             </form>
+
 
             <div class="divider">ou</div>
 
@@ -325,6 +327,7 @@
         </div>
 
     </div>
+    <script src="../js/signin_script.js"></script>
 
 </body>
 </html>
